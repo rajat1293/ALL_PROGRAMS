@@ -1,0 +1,13 @@
+def isSubset(L1, L2):
+ sum=0
+ for e1 in L1:
+  matched = False
+  for e2 in L2:
+   sum+=1
+   print sum
+   if e1 == e2:
+    matched = True
+    break
+  if not matched:
+   return False
+ return True

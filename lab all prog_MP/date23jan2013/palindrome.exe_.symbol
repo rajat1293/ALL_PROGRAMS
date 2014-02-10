@@ -1,0 +1,19 @@
+< THE SYMBOL TABLE >  palindrome.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+B                        	0000A     	1         	VAR       	data      
+C                        	0000D     	1         	VAR       	data      
+CODE                     	00002     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+L                        	0000D     	-1        	LABEL     	code      
+K                        	00015     	-1        	LABEL     	code      
+T                        	00030     	-1        	LABEL     	code      
+P                        	00039     	-1        	LABEL     	code      
+S                        	00040     	-1        	LABEL     	code      
+===================================================================================================
+[ 5/9/2013  --  4:09:14 PM ] 
+< END >
+ 

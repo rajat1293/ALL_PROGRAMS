@@ -1,0 +1,565 @@
+
+
+
+
+                                                   var amzn_wdgt={"cols":3,"tag":"theleapoi07-20","width":"494","inner_bkgd_color":"#b3c1c8","serviceVersion":"20070822","use_default_search_term":true,"head_text_color":"#eae493","marketPlace":"US","show_image":true,"price_color":"#3f3c39","rows":1,"templateId":"8002","default_search_term":"technology","category":null,"height":null,"curve_corners":false,"outer_bkgd_color":"#011826","show_review":false,"displayTemplate":"6","show_price":true,"text_color":"#31658b"}
+            amzn_wdgt.ID = "V20070822/US/theleapoi07-20/8002/a3a19bbe-c688-42c2-8d35-4fef4eb13df4";
+            amzn_wdgt.rt = "as_li_tf_sw";
+            if (typeof _amzn_utils_strs == "undefined") { _amzn_utils_strs = {}; }; _amzn_utils_strs.getStringForUS = function(key){
+ var obj = new Object();        obj.Book = 'Book';
+        obj.Search = 'Search';
+        obj.Loading = 'Loading';
+        obj.LoyaltyPoints = 'Loyalty Points';
+        obj.GetEditWidgetShort = 'Get/Edit widget';
+        obj.Kindle = '';
+        obj.Unbox = 'Amazon Instant Video';
+        obj.GetEditWidgetLong = 'Get/Edit this widget';
+        obj.BestPrice = 'Best Price';
+        obj.Music = 'CD';
+        obj.NoItemsWishlist = 'No items in the Wish List';
+        obj.MP3 = 'MP3';
+        obj.Buy = 'Buy';
+        obj.Download = 'Download';
+        obj.closeString = 'Close window';
+        obj.or = 'or';
+        obj.NoResultsFor = 'No results for';
+        obj.SortBy = 'Sort by';
+        obj.Now = 'Now';
+        obj.GetWidgetLong = 'Get Widget';
+        obj.DVD = 'DVD';
+        obj.CustomerReviews = 'Reviews';
+        obj.PrivacyPolicy = 'Privacy';
+        obj.ErrorMessage = 'Could not connect to server. Please try later.';
+        obj.Price = 'Price';
+        obj.Searching = 'Searching';
+        obj.WatchNow = 'WatchNow';
+        obj.BuyNew = 'Buy New';
+        obj.Video = 'Video';
+        obj.selectStore = 'Select an Amazon store';
+        obj.Amazon = 'Amazon';
+        obj.CampaignID = '212361';
+        obj.AssocImpVIP = 'www.assoc-amazon.com';
+        obj.PandaAssocImpVIP = 'ir-na.amazon-adsystem.com';
+        obj.CompletionVIP = 'completion.amazon.com/search/complete';
+        obj.issMktid = '1';
+        obj.AmazonCom = 'Amazon.com';
+        obj.AmazonComLink = 'http://www.amazon.com/';
+        obj.PrivacyPolicyLink = 'http://rcm-na.amazon-adsystem.com/e/cm/privacy-policy.html?o=1';
+        obj.DefaultTag = 'widgetsamazon-20';
+        obj.WebsiteRefTag = 'assoc_wdgt_us';
+        obj.WSUrl = 'http://ws.amazon.com/widgets';
+        obj.PandaWSUrl = 'http://ws-na.amazon-adsystem.com/widgets';
+        obj.WMSUrl = 'http://wms.assoc-amazon.com';
+        obj.PandaWMSUrl = 'http://wms-na.amazon-adsystem.com';
+        obj.WebsiteUrl = 'http://widgets.amazon.com/';
+        obj.PrivacyPolicyLinkLength = '7';
+        obj.AmazonComLogoLength = '86';
+        obj.GetLinkButtonLengthDark = '70';
+        obj.GetLinkButtonLength = '82';
+        obj.GetLinkLength = '10';
+        obj.PrivacyAmazonComPermissableLength = '128';
+        obj.PrivacyGetLinkPermissableLength = '120';
+        obj.PrivacyGetLinkButtonPermissableLength = '125';
+        obj.PrivacyGetLinkButtonPermissableLengthDark = '115';
+        obj.LetterToPixelRatio = '6';
+if(obj[key]){ 
+return  obj[key]; }else { return 'Unknown string';
+    }
+}
+
+	    if (typeof _amzn_utils_populate_category == "undefined") { _amzn_utils_populate_category = {}; };
+ _amzn_utils_populate_category.populateCategories = function(marketplace) {
+    var obj = new Object();
+    if(marketplace == 'JP'){
+        obj['All'] = 'Amazon.co.jp';
+        obj['Books'] = '本';
+        obj['Automotive'] = 'カー＆バイク用品';
+        obj['Hobbies'] = 'ホビー';
+        obj['ForeignBooks'] = '洋書';
+        obj['Classical'] = 'クラシックミュージック';
+        obj['Electronics'] = '家電&カメラ';
+        obj['OfficeProducts'] = '文房具・オフィス用品';
+        obj['Kitchen'] = 'ホーム＆キッチン';
+        obj['HomeImprovement'] = 'DIY・工具';
+        obj['Music'] = 'ミュージック';
+        obj['MusicalInstruments'] = '楽器';
+        obj['DVD'] = 'DVD';
+        obj['Software'] = 'PCソフト';
+        obj['VideoGames'] = 'TVゲーム';
+        obj['Toys'] = 'おもちゃ';
+        obj['SportingGoods'] = 'スポーツ';
+        obj['HealthPersonalCare'] = 'ヘルス＆ビューティー';
+        obj['Beauty'] = 'コスメ';
+        obj['Grocery'] = '食品＆飲料';
+        obj['Watches'] = '時計';
+        obj['Jewelry'] = 'ジュエリー';
+        obj['Baby'] = 'ベビー&マタニティ';
+        obj['Apparel'] = '服＆ファッション小物';
+        obj['Shoes'] = 'シューズ&バッグ';
+        obj['PetSupplies'] = 'ペット用品';
+        obj['PCHardware'] = 'パソコン・周辺機器';
+        obj['MP3Downloads'] = 'MP3ダウンロード';
+        obj['Appliances'] = '大型家電';
+        obj['KindleStore'] = 'Kindle ストア';
+    }
+    else if(marketplace == 'FR'){
+        obj['All'] = 'Amazon.fr';
+        obj['Beauty'] = 'Beauté';
+        obj['Baby'] = 'Bébés et Puériculture';
+        obj['Jewelry'] = 'Bijoux';
+        obj['Kitchen'] = 'Cuisine & Maison';
+        obj['DVD'] = 'DVD';
+        obj['OfficeProducts'] = 'Fournitures de bureau';
+        obj['Appliances'] = 'Gros électroménager';
+        obj['Electronics'] = 'Image Son Micro Photo';
+        obj['VideoGames'] = 'Informatique & jeux vidéos';
+        obj['Toys'] = 'Jouets & jeux';
+        obj['KindleStore'] = ' Boutique Kindle';
+        obj['Books'] = 'Livres';
+        obj['ForeignBooks'] = 'Livres en anglais';
+        obj['Software'] = 'Logiciels';
+        obj['Watches'] = 'Montres';
+        obj['Music'] = 'Musique';
+        obj['PCHardware'] = 'Ordinateurs';
+        obj['MusicalInstruments'] = 'Instruments de musique';
+        obj['HealthPersonalCare'] = 'Santé & Soins du Corps';
+        obj['MP3Downloads'] = 'Téléchargements MP3';
+        obj['Shoes'] = 'Chaussures et accessoires';
+        obj['SportingGoods'] = 'Sports et Loisirs';
+        obj['Lighting'] = 'Luminaires et Eclairage';
+        obj['Apparel'] = 'Vêtements et accessoires';
+        obj['Luggage'] = 'Bagages';
+    }
+    else if(marketplace == 'US'){
+        obj['All'] = 'Amazon.com';
+        obj['UnboxVideo'] = 'Amazon Instant Video';
+        obj['Apparel'] = 'Apparel & Accessories';
+        obj['Appliances'] = 'Appliances';
+        obj['ArtsAndCrafts'] = 'Arts, Crafts & Sewing';
+        obj['Automotive'] = 'Automotive';
+        obj['Baby'] = 'Baby';
+        obj['Beauty'] = 'Beauty';
+        obj['Books'] = 'Books';
+        obj['Photo'] = 'Camera & Photo';
+        obj['Wireless'] = 'Cell Phones & Accessories';
+        obj['Classical'] = 'Classical Music';
+        obj['PCHardware'] = 'Computers';
+        obj['DVD'] = 'DVD';
+        obj['Electronics'] = 'Electronics';
+        obj['Collectibles'] = 'Entertainment Collectibles';
+        obj['VideoGames'] = 'Game Downloads';
+        obj['GiftCards'] = 'Gift Cards';
+        obj['Grocery'] = 'Grocery & Gourmet Food';
+        obj['HomeGarden'] = 'Home & Garden';
+        obj['HealthPersonalCare'] = 'Health & Personal Care';
+        obj['Industrial'] = 'Industrial & Scientific';
+        obj['Jewelry'] = 'Jewelry';
+        obj['KindleStore'] = 'Kindle Store';
+        obj['Kitchen'] = 'Kitchen & Housewares';
+        obj['Magazines'] = 'Magazine Subscriptions';
+        obj['Miscellaneous'] = 'Miscellaneous';
+        obj['MP3Downloads'] = 'MP3 Downloads';
+        obj['Music'] = 'Music';
+        obj['MusicalInstruments'] = 'Musical Instruments';
+        obj['OfficeProducts'] = 'Office Products';
+        obj['PetSupplies'] = 'Pet Supplies';
+        obj['LawnAndGarden'] = 'Patio, Lawn & Garden';
+        obj['Shoes'] = 'Shoes';
+        obj['Software'] = 'Software';
+        obj['Collectibles'] = 'Sports Collectibles';
+        obj['SportingGoods'] = 'Sports & Outdoors';
+        obj['Tools'] = 'Tools & Hardware';
+        obj['Toys'] = 'Toys & Games';
+        obj['VHS'] = 'VHS';
+        obj['VideoGames'] = 'Video Games';
+        obj['Watches'] = 'Watches';
+    }
+    else if(marketplace == 'BR'){
+        obj['All'] = 'Amazon.com.br';
+        obj['KindleStore'] = 'Loja Kindle';
+    }
+    else if(marketplace == 'IN'){
+        obj['All'] = 'Amazon.in';
+        obj['Baby'] = 'Baby';
+        obj['Books'] = 'Books';
+        obj['PCHardware'] = 'Computers';
+        obj['DVD'] = 'Movies & TV';
+        obj['Electronics'] = 'Electronics';
+        obj['Jewelry'] = 'Jewelry';
+        obj['HomeGarden'] = 'Kitchen & Housewares';
+        obj['Toys'] = 'Toys & Games';
+        obj['Watches'] = 'Watches';
+    }
+    else if(marketplace == 'GB'){
+        obj['All'] = 'Amazon.co.uk';
+        obj['Baby'] = 'Baby';
+        obj['Beauty'] = 'Beauty';
+        obj['Books'] = 'Books';
+        obj['Automotive'] = 'Car & Motorbike';
+        obj['Classical'] = 'Classical Music';
+        obj['Apparel'] = 'Clothing';
+        obj['PCHardware'] = 'Computers';
+        obj['VideoGames'] = 'PC & Video Games';
+        obj['Tools'] = 'DIY & Tools';
+        obj['DVD'] = 'DVD';
+        obj['Electronics'] = 'Electronics';
+        obj['HomeGarden'] = 'Garden & Outdoors';
+        obj['Grocery'] = 'Grocery';
+        obj['HealthPersonalCare'] = 'Health & Beauty';
+        obj['Jewelry'] = 'Jewelry';
+        obj['KindleStore'] = 'Kindle Store';
+        obj['Kitchen'] = 'Kitchen & Home Appliances';
+        obj['Appliances'] = 'Large Appliances';
+        obj['Lighting'] = 'Lighting';
+        obj['MP3Downloads'] = 'MP3 Downloads';
+        obj['Music'] = 'Music';
+        obj['MusicalInstruments'] = 'Musical Instruments';
+        obj['OfficeProducts'] = 'Office Products';
+        obj['SportingGoods'] = 'Sports &amp; Leisure';
+        obj['Software'] = 'Software';
+        obj['Toys'] = 'Toys & Games';
+        obj['VHS'] = 'VHS';
+        obj['Watches'] = 'Watches';
+        obj['PetSupplies'] = 'Pet Supplies';
+        obj['Luggage'] = 'Luggage';
+    }
+    else if(marketplace == 'DE'){
+        obj['All'] = 'Amazon.de';
+        obj['Automotive'] = 'Auto und Motorrad';
+        obj['Baby'] = 'Baby';
+        obj['Tools'] = 'Baumarkt';
+        obj['Lighting'] = 'Beleuchtung';
+        obj['Books'] = 'Bücher';
+        obj['OfficeProducts'] = 'Bürobedarf';
+        obj['PCHardware'] = 'Computers';
+        obj['HealthPersonalCare'] = 'Drogerie & Bad';
+        obj['DVD'] = 'DVD';
+        obj['Appliances'] = 'Elektro-Großgeräte';
+        obj['Electronics'] = 'Elektronik & Foto';
+        obj['ForeignBooks'] = 'English Books';
+        obj['VideoGames'] = 'Games';
+        obj['HomeGarden'] = 'Garten &amp; Freizeit';
+        obj['Grocery'] = 'Lebensmittel & Getränke';
+        obj['KindleStore'] = 'Kindle-Shop';
+        obj['Kitchen'] = 'Küche & Haushaltswaren';
+        obj['MP3Downloads'] = 'MP3-Downloads';
+        obj['Music'] = 'Musik';
+        obj['MusicalInstruments'] = 'Musikinstrumente & DJ';
+        obj['Beauty'] = 'Parfümerie & Kosmetik';
+        obj['Jewelry'] = 'Schmuck';
+        obj['Apparel'] = 'Schuhe &amp; Handtaschen';
+        obj['Software'] = 'Software';
+        obj['Toys'] = 'Spielzeug';
+        obj['SportingGoods'] = 'Sport & Freizeit';
+        obj['Watches'] = 'Uhren';
+        obj['PetSupplies'] = 'Haustier';
+        obj['Luggage'] = 'Gepäck';
+    }
+    else if(marketplace == 'CA'){
+        obj['All'] = 'Amazon.ca';
+        obj['Books'] = 'Livres en Français';
+        obj['Music'] = 'Music';
+        obj['Classical'] = 'Classical Music';
+        obj['DVD'] = 'DVD';
+        obj['Kitchen'] = 'Home & Garden';
+        obj['VHS'] = 'VHS';
+        obj['Electronics'] = 'Electronics';
+        obj['Watches'] = 'Watches';
+        obj['Software'] = 'Software';
+        obj['VideoGames'] = 'Computer & Video Games';
+        obj['SportingGoods'] = 'Sports & Outdoors';
+        obj['Baby'] = 'Baby';
+        obj['Beauty'] = 'Beauty';
+        obj['HealthPersonalCare'] = 'Health & Personal Care';
+        obj['Luggage'] = 'Luggage';
+        obj['PetSupplies'] = 'Pet Supplies';
+        obj['Tools'] = 'Tools & Hardware';
+        obj['Toys'] = 'Toys & Games';
+    }
+    else if(marketplace == 'CN'){
+        obj['All'] = 'Amazon.cn';
+        obj['Books'] = '图书';
+        obj['Music'] = '音乐';
+        obj['Wireless'] = '手机／通讯';
+        obj['HomeGarden'] = '家电';
+        obj['Beauty'] = '化妆';
+        obj['Kitchen'] = '厨具';
+        obj['Home'] = '家居';
+        obj['SportingGoods'] = '运动健康';
+        obj['Shoes'] = '鞋靴';
+        obj['Toys'] = '玩具';
+        obj['Watches'] = '钟表';
+        obj['Jewelry'] = '珠宝首饰';
+        obj['HealthPersonalCare'] = '个人护理';
+        obj['Software'] = '软件';
+        obj['VideoGames'] = '游戏/娱乐';
+        obj['Apparel'] = '服饰箱包';
+        obj['Photo'] = '摄影/摄像';
+        obj['AudioVisual'] = '电视音响';
+        obj['Computers'] = '电脑产品';
+        obj['AudioVisualEducation'] = '教育音像';
+        obj['Baby'] = '母婴用品';
+        obj['Electronics'] = '电视音响';
+        obj['Miscellaneous'] = '其他';
+        obj['grocery'] = '食品';
+        obj['office-products'] = '办公用品';
+        obj['Appliances'] = '大家电';
+        obj['PetSupplies'] = '宠物用品';
+        obj['KindleStore'] = 'Kindle商店';
+    }
+    else{
+    }
+
+    return obj;
+}
+
+
+	    if (typeof _amzn_utils_searchalias == "undefined") { _amzn_utils_searchalias = {}; };_amzn_utils_searchalias.getInlineSearchAliases = function(marketplace) {
+    var obj = new Object();
+    if(marketplace == 'JP'){
+        obj['All'] = 'aps';
+        obj['Books'] = 'stripbooks';
+        obj['Automotive'] = 'automotive';
+        obj['Hobbies'] = 'hobby';
+        obj['ForeignBooks'] = 'english-books';
+        obj['Classical'] = 'classical';
+        obj['Electronics'] = 'electronics';
+        obj['OfficeProducts'] = 'office-products';
+        obj['Kitchen'] = 'kitchen';
+        obj['HomeImprovement'] = 'diy';
+        obj['Music'] = 'popular';
+        obj['MusicalInstruments'] = 'mi';
+        obj['DVD'] = 'dvd';
+        obj['Software'] = 'software';
+        obj['VideoGames'] = 'videogames';
+        obj['Toys'] = 'toys';
+        obj['SportingGoods'] = 'sporting';
+        obj['HealthPersonalCare'] = 'hpc';
+        obj['Beauty'] = 'beauty';
+        obj['Grocery'] = 'food-beverage';
+        obj['Watches'] = 'watch';
+        obj['Jewelry'] = 'jewelry';
+        obj['Baby'] = 'baby';
+        obj['Apparel'] = 'apparel';
+        obj['Shoes'] = 'shoes';
+        obj['PetSupplies'] = 'pets';
+        obj['PCHardware'] = 'computers';
+        obj['MP3Downloads'] = 'digital-music';
+        obj['Appliances'] = 'fe-appliances-jp';
+        obj['KindleStore'] = 'digital-text';
+    }
+    else if(marketplace == 'FR'){
+        obj['All'] = 'aps';
+        obj['Beauty'] = 'beauty';
+        obj['Baby'] = 'baby';
+        obj['Jewelry'] = 'jewelry';
+        obj['Kitchen'] = 'kitchen';
+        obj['DVD'] = 'dvd';
+        obj['OfficeProducts'] = 'office-products';
+        obj['Appliances'] = 'appliances';
+        obj['Electronics'] = 'electronics';
+        obj['VideoGames'] = 'videogames';
+        obj['Toys'] = 'toys';
+        obj['KindleStore'] = 'digital-text';
+        obj['Books'] = 'stripbooks';
+        obj['ForeignBooks'] = 'english-books';
+        obj['Software'] = 'software';
+        obj['Watches'] = 'watches';
+        obj['Music'] = 'popular';
+        obj['PCHardware'] = 'computers';
+        obj['MusicalInstruments'] = 'mi';
+        obj['HealthPersonalCare'] = 'hpc';
+        obj['MP3Downloads'] = 'digital-music';
+        obj['Shoes'] = 'shoes';
+        obj['SportingGoods'] = 'sports';
+        obj['Lighting'] = 'lighting';
+        obj['Apparel'] = 'clothing';
+        obj['Luggage'] = 'luggage';
+    }
+    else if(marketplace == 'US'){
+        obj['All'] = 'aps';
+        obj['UnboxVideo'] = 'amazontv';
+        obj['Apparel'] = 'apparel';
+        obj['Appliances'] = 'appliances';
+        obj['ArtsAndCrafts'] = 'arts-crafts';
+        obj['Automotive'] = 'automotive';
+        obj['Baby'] = 'baby-products';
+        obj['Beauty'] = 'beauty';
+        obj['Books'] = 'stripbooks';
+        obj['Photo'] = 'photo';
+        obj['Wireless'] = 'mobile';
+        obj['Classical'] = 'classical';
+        obj['PCHardware'] = 'pc-hardware';
+        obj['DVD'] = 'dvd';
+        obj['Electronics'] = 'electronics';
+        obj['Collectibles'] = 'na-collectibles-us';
+        obj['VideoGames'] = 'videogames';
+        obj['GiftCards'] = 'gift-cards';
+        obj['Grocery'] = 'grocery';
+        obj['HomeGarden'] = 'garden';
+        obj['HealthPersonalCare'] = 'hpc';
+        obj['Industrial'] = 'industrial';
+        obj['Jewelry'] = 'jewelry';
+        obj['KindleStore'] = 'digital-text';
+        obj['Kitchen'] = 'kitchen';
+        obj['Magazines'] = 'magazines';
+        obj['Miscellaneous'] = 'misc';
+        obj['MP3Downloads'] = 'digital-music';
+        obj['Music'] = 'popular';
+        obj['MusicalInstruments'] = 'mi';
+        obj['OfficeProducts'] = 'office-products';
+        obj['PetSupplies'] = 'pets';
+        obj['LawnAndGarden'] = 'na-lawngarden-us';
+        obj['Shoes'] = 'shoes';
+        obj['Software'] = 'software';
+        obj['Collectibles'] = 'na-collectibles-us';
+        obj['SportingGoods'] = 'sporting';
+        obj['Tools'] = 'tools';
+        obj['Toys'] = 'toys-and-games';
+        obj['VHS'] = 'vhs';
+        obj['VideoGames'] = 'videogames';
+        obj['Watches'] = 'watches';
+    }
+    else if(marketplace == 'BR'){
+        obj['All'] = 'aps';
+        obj['KindleStore'] = 'digital-text';
+    }
+    else if(marketplace == 'IN'){
+        obj['All'] = 'aps';
+        obj['Baby'] = 'baby';
+        obj['Books'] = 'stripbooks';
+        obj['PCHardware'] = 'computers';
+        obj['DVD'] = 'dvd';
+        obj['Electronics'] = 'electronics';
+        obj['Jewelry'] = 'jewelry';
+        obj['HomeGarden'] = 'kitchen';
+        obj['Toys'] = 'toys';
+        obj['Watches'] = 'watches';
+    }
+    else if(marketplace == 'GB'){
+        obj['All'] = 'aps';
+        obj['Baby'] = 'baby';
+        obj['Beauty'] = 'beauty';
+        obj['Books'] = 'stripbooks';
+        obj['Automotive'] = 'automotive';
+        obj['Classical'] = 'classical';
+        obj['Apparel'] = 'clothing';
+        obj['PCHardware'] = 'computers';
+        obj['VideoGames'] = 'videogames';
+        obj['Tools'] = 'diy';
+        obj['DVD'] = 'dvd';
+        obj['Electronics'] = 'electronics';
+        obj['HomeGarden'] = 'outdoor';
+        obj['Grocery'] = 'grocery';
+        obj['HealthPersonalCare'] = 'drugstore';
+        obj['Jewelry'] = 'jewelry';
+        obj['KindleStore'] = 'digital-text';
+        obj['Kitchen'] = 'kitchen';
+        obj['Appliances'] = 'appliances';
+        obj['Lighting'] = 'lighting';
+        obj['MP3Downloads'] = 'digital-music';
+        obj['Music'] = 'popular';
+        obj['MusicalInstruments'] = 'mi';
+        obj['OfficeProducts'] = 'office-products';
+        obj['SportingGoods'] = 'sports';
+        obj['Software'] = 'software';
+        obj['Toys'] = 'toys';
+        obj['VHS'] = 'vhs';
+        obj['Watches'] = 'watches';
+        obj['PetSupplies'] = 'pets';
+        obj['Luggage'] = 'luggage';
+    }
+    else if(marketplace == 'DE'){
+        obj['All'] = 'aps';
+        obj['Automotive'] = 'automotive';
+        obj['Baby'] = 'baby';
+        obj['Tools'] = 'diy';
+        obj['Lighting'] = 'lighting';
+        obj['Books'] = 'stripbooks';
+        obj['OfficeProducts'] = 'office-products';
+        obj['PCHardware'] = 'computers';
+        obj['HealthPersonalCare'] = 'drugstore';
+        obj['DVD'] = 'dvd';
+        obj['Appliances'] = 'appliances';
+        obj['Electronics'] = 'electronics';
+        obj['ForeignBooks'] = 'english-books';
+        obj['VideoGames'] = 'videogames';
+        obj['HomeGarden'] = 'outdoor';
+        obj['Grocery'] = 'grocery';
+        obj['KindleStore'] = 'digital-text';
+        obj['Kitchen'] = 'kitchen';
+        obj['MP3Downloads'] = 'digital-music';
+        obj['Music'] = 'popular';
+        obj['MusicalInstruments'] = 'mi';
+        obj['Beauty'] = 'beauty';
+        obj['Jewelry'] = 'jewelry';
+        obj['Apparel'] = 'shoes';
+        obj['Software'] = 'software';
+        obj['Toys'] = 'toys';
+        obj['SportingGoods'] = 'sports';
+        obj['Watches'] = 'watches';
+        obj['PetSupplies'] = 'pets';
+        obj['Luggage'] = 'luggage';
+    }
+    else if(marketplace == 'CA'){
+        obj['All'] = 'aps';
+        obj['Books'] = 'french-books';
+        obj['Music'] = 'popular';
+        obj['Classical'] = 'classical';
+        obj['DVD'] = 'dvd';
+        obj['Kitchen'] = 'kitchen';
+        obj['VHS'] = 'vhs';
+        obj['Electronics'] = 'electronics';
+        obj['Watches'] = 'watches';
+        obj['Software'] = 'software';
+        obj['VideoGames'] = 'videogames';
+        obj['SportingGoods'] = 'sporting';
+        obj['Baby'] = 'baby';
+        obj['Beauty'] = 'beauty';
+        obj['HealthPersonalCare'] = 'hpc';
+        obj['Luggage'] = 'luggage';
+        obj['PetSupplies'] = 'pets';
+        obj['Tools'] = 'tools';
+        obj['Toys'] = 'toys';
+    }
+    else if(marketplace == 'CN'){
+        obj['All'] = 'aps';
+        obj['Books'] = 'books';
+        obj['Music'] = 'music';
+        obj['Wireless'] = 'communications';
+        obj['HomeGarden'] = 'home';
+        obj['Beauty'] = 'beauty';
+        obj['Kitchen'] = 'kitchen';
+        obj['Home'] = 'home-substore';
+        obj['SportingGoods'] = 'sporting-goods';
+        obj['Shoes'] = 'shoes';
+        obj['Toys'] = 'toys-and-games';
+        obj['Watches'] = 'watches';
+        obj['Jewelry'] = 'jewelry';
+        obj['HealthPersonalCare'] = 'hpc';
+        obj['Software'] = 'software';
+        obj['VideoGames'] = 'videogames';
+        obj['Apparel'] = 'apparel';
+        obj['Photo'] = 'photo-video';
+        obj['AudioVisual'] = 'audio-visual';
+        obj['Computers'] = 'computers';
+        obj['AudioVisualEducation'] = 'audio-visual-education';
+        obj['Baby'] = 'baby';
+        obj['Electronics'] = 'electronics';
+        obj['Miscellaneous'] = 'misc';
+        obj['grocery'] = 'grocery';
+        obj['office-products'] = 'office-products';
+        obj['Appliances'] = 'appliances';
+        obj['PetSupplies'] = 'pets';
+        obj['KindleStore'] = 'digital-text';
+    }
+    else{
+    }
+
+    return obj;
+}
+
+
+		
+	                        document.write('<script charset="utf-8" type="text/javascript" src="http://wms-na.amazon-adsystem.com/panda/20070822/US/js/8002_6.js"> </script>');
+                       

@@ -1,0 +1,7 @@
+Sorting ----------------------
+
+
+1.	selection sort is an unstable sort because the order  of the duplicate elements is changed..
+	consider the array 6 2 3 1 5 1 ...the latter 1 will form the first element in the array...
+	efficieny O(n)(n-1)/2;
+

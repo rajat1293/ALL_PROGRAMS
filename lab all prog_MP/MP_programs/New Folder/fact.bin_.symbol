@@ -1,0 +1,37 @@
+< THE SYMBOL TABLE >  fact.bin_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+L                        	00008     	-1        	LABEL     	(NOSEG)   
+SCAN_NUM                 	00017     	-1        	NEAR      	(NOSEG)   
+NEXT_DIGIT_LOC1TMP       	00023     	-1        	LABEL     	(NOSEG)   
+NOT_CR_LOC4TMP           	00036     	-1        	LABEL     	(NOSEG)   
+BACKSPACE_CHECKED_LOC2TMP	00058     	-1        	LABEL     	(NOSEG)   
+OK_AE_0_LOC4TMP          	0005E     	-1        	LABEL     	(NOSEG)   
+REMOVE_NOT_DIGIT_LOC4TMP 	00062     	-1        	LABEL     	(NOSEG)   
+OK_DIGIT_LOC4TMP         	0007C     	-1        	LABEL     	(NOSEG)   
+SET_MINUS_LOC1TMP        	00098     	-1        	LABEL     	(NOSEG)   
+TOO_BIG2_LOC2TMP         	000A0     	-1        	LABEL     	(NOSEG)   
+TOO_BIG_LOC2TMP          	000A5     	-1        	LABEL     	(NOSEG)   
+STOP_INPUT_LOC3TMP       	000C9     	-1        	LABEL     	(NOSEG)   
+NOT_MINUS_LOC3TMP        	000D3     	-1        	LABEL     	(NOSEG)   
+MAKE_MINUS_LOC1TMP       	000D7     	1         	VAR       	(NOSEG)   
+TEN_LOC1TMP              	000D8     	2         	VAR       	(NOSEG)   
+SKIP_PROC_SCAN_NUM_LOC3TMP	000DA     	-1        	LABEL     	(NOSEG)   
+PRINT_NUM                	000DC     	-1        	NEAR      	(NOSEG)   
+NOT_ZERO_LOC5TMP         	000ED     	-1        	LABEL     	(NOSEG)   
+POSITIVE_LOC5TMP         	000FC     	-1        	LABEL     	(NOSEG)   
+PRINTED_LOC5TMP          	000FF     	-1        	LABEL     	(NOSEG)   
+SKIP_PROC_PRINT_NUM_LOC5TMP	00102     	-1        	LABEL     	(NOSEG)   
+PRINT_NUM_UNS            	00104     	-1        	NEAR      	(NOSEG)   
+BEGIN_PRINT_LOC6TMP      	00113     	-1        	LABEL     	(NOSEG)   
+CALC_LOC6TMP             	00121     	-1        	LABEL     	(NOSEG)   
+SKIP_LOC6TMP             	00135     	-1        	LABEL     	(NOSEG)   
+PRINT_ZERO_LOC6TMP       	00145     	-1        	LABEL     	(NOSEG)   
+END_PRINT_LOC6TMP        	0014D     	-1        	LABEL     	(NOSEG)   
+TEN_LOC6TMP              	00152     	2         	VAR       	(NOSEG)   
+SKIP_PROC_PRINT_NUM_UNS_LOC7TMP	00154     	-1        	LABEL     	(NOSEG)   
+===================================================================================================
+[ 5/9/2013  --  5:01:35 PM ] 
+< END >
+ 

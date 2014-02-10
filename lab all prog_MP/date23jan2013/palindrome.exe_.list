@@ -1,0 +1,101 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+palindrome.exe_ -- emu8086 assembler version: 4.02  
+ 
+[ 5/9/2013  --  4:09:14 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       .model small
+[   2]        :                                       .data
+[   3]    0000: 31 32 33 34 35 34 33 32 31 24         a db "123454321$"
+[   4]    000A: 20 70 24                              b db " p$"
+[   5]    000D: 6E 6F 74 20 70 24                     c db "not p$"
+[   6]        :                                       .code
+[   7]    0020:                                       start:
+[   8]    0020: B8 00 00                              mov AX,@data
+[   9]    0023: 8E D8                                 mov ds,ax
+[  10]    0025: BE 00 00                              mov si,offset a
+[  11]    0028: BF 00 00                              mov di ,offset a
+[  12]    002B: 8A 3D                                 mov bh ,[di]
+[  13]    002D:                                       l:
+[  14]    002D: 80 3C 24                              cmp [si] ,'$'
+[  15]    0030: 74 03                                 jz k
+[  16]    0032: 46                                    inc si
+[  17]    0033: E2 F8                                 loop l
+[  18]    0035:                                       k:
+[  19]    0035: 4E                                    dec si
+[  20]    0036: 38 3C                                 cmp [si] ,bh
+[  21]    0038: 75 16                                 jnz t
+[  22]    003A: 8A 14                                 mov dl,[si]
+[  23]    003C: B4 02                                 mov ah,02h
+[  24]    003E: CD 21                                 int 21h
+[  25]    0040: 8A D7                                 mov dl,bh
+[  26]    0042: B4 02                                 mov ah,02h
+[  27]    0044: CD 21                                 int 21h
+[  28]        :                                       
+[  29]    0046: 47                                    inc di
+[  30]    0047: 8A 3D                                 mov bh,[di]
+[  31]    0049: 80 FF 24                              cmp bh,'$'
+[  32]    004C: 74 0B                                 jz p
+[  33]    004E: E2 E5                                 loop k
+[  34]    0050:                                       t:
+[  35]    0050: BA 0D 00                              mov dx,offset c
+[  36]    0053: B4 09                                 mov ah,09h
+[  37]    0055: CD 21                                 int 21h
+[  38]    0057: EB 07                                 jmp s
+[  39]    0059:                                       p:
+[  40]    0059: BA 0A 00                              mov dx,offset b
+[  41]    005C: B4 09                                 mov ah,09h
+[  42]    005E: CD 21                                 int 21h
+[  43]    0060:                                       s:
+[  44]        :                                       end start
+[  45]        :                                       ;when bx was used didn't work ..now with bh works
+[  46]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 60      -   bytes on last page (l.byte)
+0003: 00      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 8C      -   check sum (l.byte)
+0013: 37      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 02      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 01      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 02      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

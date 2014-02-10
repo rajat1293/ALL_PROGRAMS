@@ -1,0 +1,85 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+stepper.bin_ -- emu8086 assembler version: 4.02  
+ 
+[ 5/9/2013  --  7:07:57 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       #start=stepper_motor.exe#
+[   2]        :                                       name "stepper"
+[   3]        :                                       steps_before_direction_change = 10h ; 32 (decimal)
+[   4]    0000: EB 10                                 jmp start
+[   5]        :                                       ; half-step rotation  clock-wise:
+[   6]    0002: 03                                    datcw    db 0000_0011b
+[   7]    0003: 06                                    db 0000_0110b
+[   8]    0004: 0C                                    db 0000_1100b
+[   9]    0005: 09                                    db 0000_1001b
+[  10]        :                                       
+[  11]        :                                       ; half-step rotation  counter-clock-wise:
+[  12]    0006: 03                                    datccw   db 0000_0011b
+[  13]    0007: 09                                    db 0000_1001b
+[  14]    0008: 0C                                    db 0000_1100b
+[  15]    0009: 06                                    db 0000_0110b
+[  16]        :                                       
+[  17]        :                                       ; full-step rotation clock-wise:
+[  18]    000A: 03                                    datcw_fs db 0000_0011b
+[  19]    000B: 06                                    db 0000_0110b
+[  20]    000C: 09                                    db 0000_1001b
+[  21]    000D: 03                                    db 0000_0011b
+[  22]        :                                       
+[  23]        :                                       ; full-step rotation counter-clock-wise:
+[  24]    000E: 03                                    datccw_fs db 0000_0011b
+[  25]    000F: 09                                    db 0000_1001b
+[  26]    0010: 06                                    db 0000_0110b
+[  27]    0011: 00                                    db 0000_0000b
+[  28]        :                                       
+[  29]        :                                       
+[  30]    0012:                                       start:
+[  31]    0012: BB 02 00                              mov bx, offset datcw ; start from clock-wise half-step.
+[  32]    0015: BE 00 00                              mov si, 0
+[  33]    0018: B9 00 00                              mov cx, 0 ; step counter
+[  34]        :                                       
+[  35]    001B:                                       next_step:
+[  36]        :                                       ; motor sets top bit when it's ready to accept new command
+[  37]    001B: E4 07                                 wait:   in al, 7
+[  38]    001D: A8 80                                 test al, 10000000b
+[  39]    001F: 74 FA                                 jz wait
+[  40]        :                                       
+[  41]    0021: 8A 00                                 mov al, [bx][si]
+[  42]    0023: E6 07                                 out 7, al
+[  43]        :                                       
+[  44]    0025: 46                                    inc si
+[  45]        :                                       
+[  46]    0026: 83 FE 04                              cmp si, 4
+[  47]    0029: 72 F0                                 jb next_step
+[  48]    002B: BE 00 00                              mov si, 0
+[  49]        :                                       
+[  50]    002E: 41                                    inc cx
+[  51]    002F: 83 F9 10                              cmp cx, steps_before_direction_change
+[  52]    0032: 72 E7                                 jb  next_step
+[  53]        :                                       
+[  54]    0034: B9 00 00                              mov cx, 0
+[  55]    0037: 83 C3 04                              add bx, 4 ; next bin data
+[  56]        :                                       
+[  57]    003A: 83 FB 0E                              cmp bx, offset datccw_fs
+[  58]    003D: 76 DC                                 jbe next_step
+[  59]        :                                       
+[  60]    003F: BB 02 00                              mov bx, offset datcw ; return to clock-wise half-step.
+[  61]        :                                       
+[  62]    0042: EB D7                                 jmp next_step
+[  63]        :                                       
+[  64]        :                                       
+[  65]        :                                       
+[  66]        :                                       
+[  67]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================

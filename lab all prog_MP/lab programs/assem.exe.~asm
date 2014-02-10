@@ -1,0 +1,14 @@
+.model small
+.code
+start:
+mov cl,10
+mov dl,30h
+l:mov ah,02h
+int 21h
+inc dl
+loop l
+end start
+
+
+
+; [SOURCE]: Z:\prog\assem.exe

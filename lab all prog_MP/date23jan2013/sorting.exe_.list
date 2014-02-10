@@ -1,0 +1,150 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+sorting.exe_ -- emu8086 assembler version: 4.02  
+ 
+[ 5/9/2013  --  7:01:49 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       .model small
+[   2]        :                                       .data
+[   3]    0000: 45 4E 54 45 52 20 54 48 45 20 4E 55   a db "ENTER THE NUMBER IN THE ARRAY$"
+                4D 42 45 52 20 49 4E 20 54 48 45 20 
+                41 52 52 41 59 24                   
+[   4]    001E: 53 4F 52 54 45 44 20 41 52 52 41 59   c db "SORTED ARRAY IS--$"
+                20 49 53 2D 2D 24                   
+[   5]    0030: 45 4E 54 45 52 20 54 4F 54 41 4C 20   m db "ENTER TOTAL NUMBER IN ARRAY$"
+                4E 55 4D 42 45 52 20 49 4E 20 41 52 
+                52 41 59 24                         
+[   6]    004C: 00 00 00 00 00 00 00 00 00 00 00 00   b db 50 dup(?)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00                               
+[   7]    007E:                                       start:
+[   8]    007E: B8 00 00                              MOV AX,@DATA
+[   9]    0081: 8E D8                                 MOV DS,AX
+[  10]        :                                       
+[  11]    0083: BA 30 00                              MOV DX,OFFSET m
+[  12]    0086: B4 09                                 MOV AH,09H
+[  13]    0088: CD 21                                 INT 21H
+[  14]        :                                       
+[  15]    008A: B4 01                                 MOV AH,01H
+[  16]    008C: CD 21                                 INT 21H
+[  17]    008E: 2C 30                                 SUB AL,48
+[  18]    0090: 8A C8                                 MOV CL,AL
+[  19]    0092: 8A F8                                 MOV BH,AL
+[  20]        :                                       
+[  21]    0094: B2 20                                 MOV DL,32
+[  22]    0096: B4 02                                 MOV AH,02H
+[  23]    0098: CD 21                                 INT 21H
+[  24]        :                                       
+[  25]        :                                       
+[  26]    009A: BA 00 00                              MOV DX,OFFSET a
+[  27]    009D: B4 09                                 MOV AH,09H
+[  28]    009F: CD 21                                 INT 21H
+[  29]        :                                       
+[  30]    00A1: BE 4C 00                              MOV SI,OFFSET b
+[  31]    00A4: BF 4C 00                              MOV DI,OFFSET b
+[  32]    00A7: BD 4C 00                              MOV BP,OFFSET b
+[  33]    00AA: B4 01                                 Y:MOV AH,01H
+[  34]    00AC: CD 21                                 INT 21H
+[  35]    00AE: 88 04                                 MOV [SI],AL
+[  36]    00B0: 46                                    INC SI
+[  37]        :                                       
+[  38]    00B1: E2 F7                                 LOOP Y
+[  39]        :                                       
+[  40]    00B3: 8A CF                                 MOV CL,BH
+[  41]    00B5: FE C1                                 INC CL
+[  42]        :                                       
+[  43]        :                                       
+[  44]    00B7: 8A 1D                                 L:MOV BL,[DI]
+[  45]    00B9: 3A 5D 01                              CMP BL,[DI+1]
+[  46]    00BC: 7D 0E                                 JGE T
+[  47]    00BE: 47                                    F:INC DI
+[  48]    00BF: 3B FE                                 CMP DI,SI
+[  49]    00C1: 7C F4                                 JL L
+[  50]    00C3: 4E                                    DEC SI
+[  51]    00C4: 3B F5                                 CMP SI,BP
+[  52]    00C6: 74 0E                                 JZ P
+[  53]    00C8: 8B FD                                 MOV DI,BP
+[  54]    00CA: EB EB                                 JMP L
+[  55]    00CC:                                       T:
+[  56]    00CC: 8A 7D 01                              MOV BH,[DI+1]
+[  57]    00CF: 88 3D                                 MOV [DI],BH
+[  58]    00D1: 88 5D 01                              MOV [DI+1],BL
+[  59]    00D4: EB E8                                 JMP F
+[  60]        :                                       
+[  61]    00D6:                                       P:
+[  62]    00D6: B2 0A                                 MOV DL,0AH
+[  63]    00D8: B4 02                                 MOV AH,02H
+[  64]    00DA: CD 21                                 INT 21H
+[  65]    00DC: BA 1E 00                              MOV DX,OFFSET c
+[  66]    00DF: B4 09                                 MOV AH,09H
+[  67]    00E1: CD 21                                 INT 21H
+[  68]        :                                       
+[  69]        :                                       
+[  70]        :                                       
+[  71]    00E3:                                       Q:
+[  72]    00E3: 8A 56 00                              MOV DL,[BP]
+[  73]    00E6: B4 02                                 MOV AH,02H
+[  74]    00E8: CD 21                                 INT 21H
+[  75]    00EA: 45                                    INC BP
+[  76]        :                                       
+[  77]    00EB: E2 F6                                 LOOP Q
+[  78]    00ED:                                       E:
+[  79]        :                                       end start
+[  80]        :                                       
+[  81]        :                                       
+[  82]        :                                       
+[  83]        :                                       
+[  84]        :                                       
+[  85]        :                                       
+[  86]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: ED      -   bytes on last page (l.byte)
+0003: 00      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 06      -   check sum (l.byte)
+0013: E4      -   check sum (h.byte)
+0014: 7E      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 00      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 7F      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 00      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

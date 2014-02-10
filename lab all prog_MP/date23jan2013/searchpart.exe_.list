@@ -1,0 +1,93 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+searchpart.exe_ -- emu8086 assembler version: 4.02  
+ 
+[ 2/21/2013  --  11:00:57 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       .model small
+[   2]        :                                       .data
+[   3]    0000: 6E 69 74 6B 6B 72 24                  a db "nitkkr$"
+[   4]    0007: 69 69 69 24                           b db "iii$"
+[   5]    000B: 79 65 73 24                           c db "yes$"
+[   6]        :                                       .code
+[   7]    0010:                                       start:
+[   8]    0010: B8 00 00                              mov ax,@data
+[   9]    0013: 8E D8                                 mov ds,ax
+[  10]    0015: BE 00 00                              mov si,offset a
+[  11]    0018: BF 07 00                              mov di,offset b
+[  12]    001B: 89 FE                                 mov dh,di
+[  13]    001D:                                       s:
+[  14]    001D: 8A 3D                                 mov bh,[di]
+[  15]    001F: 38 3C                                 cmp [si],bh
+[  16]    0021: 74 04                                 jz k
+[  17]    0023:                                       h:
+[  18]    0023: 88 F7                                 mov di,dh
+[  19]    0025: EB F6                                 jmp s
+[  20]    0027:                                       k:
+[  21]    0027: 46                                    inc si
+[  22]    0028: 47                                    inc di
+[  23]    0029: 8A 3D                                 mov bh,[di]
+[  24]    002B: 80 3D 24                              cmp [di],'$'
+[  25]    002E: 74 0B                                 jz l
+[  26]    0030: 80 3C 24                              cmp [si],'$'
+[  27]    0033: 74 DB                                 jz m
+[  28]    0035: 38 3C                                 cmp [si],bh
+[  29]    0037: 75 EA                                 jnz h
+[  30]    0039: E2 EC                                 loop k
+[  31]    003B:                                       l:
+[  32]    003B: BE 0B 00                              mov si,offset c
+[  33]    003E: 8B D6                                 mov dx,si
+[  34]    0040: B4 09                                 mov ah,09h
+[  35]    0042: CD 21                                 int 21h
+[  36]    0044:                                       m :
+[  37]        :                                       end start
+[  38]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 44      -   bytes on last page (l.byte)
+0003: 00      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 0F      -   check sum (l.byte)
+0013: 91      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 01      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 01      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 01      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

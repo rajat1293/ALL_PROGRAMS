@@ -1,0 +1,21 @@
+< THE SYMBOL TABLE >  sorting.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+C                        	0001E     	1         	VAR       	data      
+M                        	00030     	1         	VAR       	data      
+B                        	0004C     	1         	VAR       	data      
+START                    	0007E     	-1        	LABEL     	data      
+Y                        	000AA     	-1        	LABEL     	data      
+L                        	000B7     	-1        	LABEL     	data      
+F                        	000BE     	-1        	LABEL     	data      
+T                        	000CC     	-1        	LABEL     	data      
+P                        	000D6     	-1        	LABEL     	data      
+Q                        	000E3     	-1        	LABEL     	data      
+E                        	000ED     	-1        	LABEL     	data      
+===================================================================================================
+[ 5/9/2013  --  7:01:49 PM ] 
+< END >
+ 

@@ -1,0 +1,41 @@
+< THE SYMBOL TABLE >  multidigitadd.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+B                        	00011     	1         	VAR       	data      
+C                        	00025     	1         	VAR       	data      
+CODE                     	00003     	-5        	SEGMENT   	(ITSELF)  
+SCAN_NUM                 	0001F     	-1        	NEAR      	code      
+NEXT_DIGIT_LOC1TMP       	0002B     	-1        	LABEL     	code      
+NOT_CR_LOC4TMP           	0003E     	-1        	LABEL     	code      
+BACKSPACE_CHECKED_LOC2TMP	00060     	-1        	LABEL     	code      
+OK_AE_0_LOC4TMP          	00066     	-1        	LABEL     	code      
+REMOVE_NOT_DIGIT_LOC4TMP 	0006A     	-1        	LABEL     	code      
+OK_DIGIT_LOC4TMP         	00084     	-1        	LABEL     	code      
+SET_MINUS_LOC1TMP        	000A0     	-1        	LABEL     	code      
+TOO_BIG2_LOC2TMP         	000A8     	-1        	LABEL     	code      
+TOO_BIG_LOC2TMP          	000AD     	-1        	LABEL     	code      
+STOP_INPUT_LOC3TMP       	000D1     	-1        	LABEL     	code      
+NOT_MINUS_LOC3TMP        	000DB     	-1        	LABEL     	code      
+MAKE_MINUS_LOC1TMP       	000DF     	1         	VAR       	code      
+TEN_LOC1TMP              	000E0     	2         	VAR       	code      
+SKIP_PROC_SCAN_NUM_LOC3TMP	000E2     	-1        	LABEL     	code      
+PRINT_NUM                	000E4     	-1        	NEAR      	code      
+NOT_ZERO_LOC5TMP         	000F5     	-1        	LABEL     	code      
+POSITIVE_LOC5TMP         	00104     	-1        	LABEL     	code      
+PRINTED_LOC5TMP          	00107     	-1        	LABEL     	code      
+SKIP_PROC_PRINT_NUM_LOC5TMP	0010A     	-1        	LABEL     	code      
+PRINT_NUM_UNS            	0010C     	-1        	NEAR      	code      
+BEGIN_PRINT_LOC6TMP      	0011B     	-1        	LABEL     	code      
+CALC_LOC6TMP             	00129     	-1        	LABEL     	code      
+SKIP_LOC6TMP             	0013D     	-1        	LABEL     	code      
+PRINT_ZERO_LOC6TMP       	0014D     	-1        	LABEL     	code      
+END_PRINT_LOC6TMP        	00155     	-1        	LABEL     	code      
+TEN_LOC6TMP              	0015A     	2         	VAR       	code      
+SKIP_PROC_PRINT_NUM_UNS_LOC7TMP	0015C     	-1        	LABEL     	code      
+===================================================================================================
+[ 5/9/2013  --  4:37:57 PM ] 
+< END >
+ 

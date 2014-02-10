@@ -1,0 +1,10 @@
+
+Oop tute
+1.transpose of sparse matrix(first normal transpose )
+2.Average salary of employees(use array of objects)
+3.create a class numbers with member to calculate factorial and another member function to find whether a number is prime or not
+(All three of these are to be implemented in C++ using oops concept)
+n also we have to summit following programmes implemented in c
+1.Heap -Sort
+2.Height of a binary tree
+3.Linked-list reversal

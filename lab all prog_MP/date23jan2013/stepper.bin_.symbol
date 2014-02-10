@@ -1,0 +1,15 @@
+< THE SYMBOL TABLE >  stepper.bin_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATCW                    	00002     	1         	VAR       	(NOSEG)   
+DATCCW                   	00006     	1         	VAR       	(NOSEG)   
+DATCW_FS                 	0000A     	1         	VAR       	(NOSEG)   
+DATCCW_FS                	0000E     	1         	VAR       	(NOSEG)   
+START                    	00012     	-1        	LABEL     	(NOSEG)   
+NEXT_STEP                	0001B     	-1        	LABEL     	(NOSEG)   
+WAIT                     	0001B     	-1        	LABEL     	(NOSEG)   
+===================================================================================================
+[ 5/9/2013  --  7:07:57 PM ] 
+< END >
+ 

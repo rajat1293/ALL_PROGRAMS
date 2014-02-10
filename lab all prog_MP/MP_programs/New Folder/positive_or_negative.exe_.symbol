@@ -1,0 +1,57 @@
+< THE SYMBOL TABLE >  positive_or_negative.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+B                        	0000D     	1         	VAR       	data      
+C                        	00016     	1         	VAR       	data      
+CODE                     	00002     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+D                        	0001B     	-1        	LABEL     	code      
+S_DCL_LOC1TMP            	0001F     	1         	VAR       	code      
+SKIP_DCL_LOC1TMP         	00028     	-1        	LABEL     	code      
+NEXT_CHAR_LOC1TMP        	0002B     	-1        	LABEL     	code      
+PRINTED_LOC1TMP          	00039     	-1        	LABEL     	code      
+G                        	0003D     	-1        	LABEL     	code      
+S_DCL_LOC2TMP            	00041     	1         	VAR       	code      
+SKIP_DCL_LOC2TMP         	0004A     	-1        	LABEL     	code      
+NEXT_CHAR_LOC2TMP        	0004D     	-1        	LABEL     	code      
+PRINTED_LOC2TMP          	0005B     	-1        	LABEL     	code      
+T                        	0005E     	-1        	LABEL     	code      
+SCAN_NUM                 	00061     	-1        	NEAR      	code      
+NEXT_DIGIT_LOC3TMP       	0006D     	-1        	LABEL     	code      
+NOT_CR_LOC6TMP           	00080     	-1        	LABEL     	code      
+BACKSPACE_CHECKED_LOC4TMP	000A2     	-1        	LABEL     	code      
+OK_AE_0_LOC6TMP          	000A8     	-1        	LABEL     	code      
+REMOVE_NOT_DIGIT_LOC6TMP 	000AC     	-1        	LABEL     	code      
+OK_DIGIT_LOC6TMP         	000C6     	-1        	LABEL     	code      
+SET_MINUS_LOC3TMP        	000E2     	-1        	LABEL     	code      
+TOO_BIG2_LOC4TMP         	000EA     	-1        	LABEL     	code      
+TOO_BIG_LOC4TMP          	000EF     	-1        	LABEL     	code      
+STOP_INPUT_LOC5TMP       	00113     	-1        	LABEL     	code      
+NOT_MINUS_LOC5TMP        	0011D     	-1        	LABEL     	code      
+MAKE_MINUS_LOC3TMP       	00121     	1         	VAR       	code      
+TEN_LOC3TMP              	00122     	2         	VAR       	code      
+SKIP_PROC_SCAN_NUM_LOC5TMP	00124     	-1        	LABEL     	code      
+PRINT_NUM                	00126     	-1        	NEAR      	code      
+NOT_ZERO_LOC7TMP         	00137     	-1        	LABEL     	code      
+POSITIVE_LOC7TMP         	00146     	-1        	LABEL     	code      
+PRINTED_LOC7TMP          	00149     	-1        	LABEL     	code      
+SKIP_PROC_PRINT_NUM_LOC7TMP	0014C     	-1        	LABEL     	code      
+PRINT_NUM_UNS            	0014E     	-1        	NEAR      	code      
+BEGIN_PRINT_LOC8TMP      	0015D     	-1        	LABEL     	code      
+CALC_LOC8TMP             	0016B     	-1        	LABEL     	code      
+SKIP_LOC8TMP             	0017F     	-1        	LABEL     	code      
+PRINT_ZERO_LOC8TMP       	0018F     	-1        	LABEL     	code      
+END_PRINT_LOC8TMP        	00197     	-1        	LABEL     	code      
+TEN_LOC8TMP              	0019C     	2         	VAR       	code      
+SKIP_PROC_PRINT_NUM_UNS_LOC9TMP	0019E     	-1        	LABEL     	code      
+PRINT_STRING             	001A0     	-1        	NEAR      	code      
+NEXT_CHAR_LOC10TMP       	001A2     	-1        	LABEL     	code      
+PRINTED_LOC10TMP         	001AF     	-1        	LABEL     	code      
+SKIP_PROC_PRINT_STRING_LOC10TMP	001B2     	-1        	LABEL     	code      
+===================================================================================================
+[ 5/9/2013  --  4:27:27 PM ] 
+< END >
+ 

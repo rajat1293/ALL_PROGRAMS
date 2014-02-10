@@ -1,0 +1,23 @@
+.model small
+.code
+start:
+mov cl,26d
+mov bh,41h
+mov bl,61h
+print:mov dl,bl
+mov ah,02h
+int 21h
+inc bl
+mov dl,bh
+mov ah,02h
+int 21h
+inc bh
+mov dl,' '
+mov ah,02h
+int 21h
+loop print
+end start
+
+
+
+; [SOURCE]: D:\all XYZ programs\lab all prog_MP\MP_programs\New Folder\LU aA-zZ.asm

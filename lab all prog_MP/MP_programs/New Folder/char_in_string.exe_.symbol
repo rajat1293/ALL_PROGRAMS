@@ -1,0 +1,18 @@
+< THE SYMBOL TABLE >  char_in_string.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+B                        	00007     	1         	VAR       	data      
+C                        	0000C     	1         	VAR       	data      
+CODE                     	00002     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+L                        	00008     	-1        	LABEL     	code      
+M                        	00015     	-1        	LABEL     	code      
+N                        	0001E     	-1        	LABEL     	code      
+END                      	00027     	-1        	LABEL     	code      
+===================================================================================================
+[ 5/9/2013  --  4:40:29 PM ] 
+< END >
+ 

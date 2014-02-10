@@ -1,0 +1,92 @@
+ASSIGNMENT 1:COT-202
+OBJECT ORIENTED PROGRAMMING USING C++
+
+Note: Implements the following program in C++ .Once they become working, submit soft copy. Try to do these questions yourself. Do not copy.
+
+Last Date of submission: 4th April 2013
+
+Q.1 Create a class matrix and find out the following:
+1)	Sum of elements of triangular matrix(assume a square matrix)
+2)	Sum of all diagonal elements (both diagonals) of a square matrix. There will be two diagonals, find individual sum for both.
+
+Q.2 Write an entire C++ program that reads a positive integer entered by an interactive user and then print out all the even divisors of that integer in a column and in decreasing order. Program also allows the user to represent this process as many times the users likes.
+
+
+Q.3 There are N numbers a[0],a[1]..a[N - 1]. Initially all are 0. You have to perform two types of operations: 
+1) Increase the numbers between indices A and B by 1. This is represented by the command      "A op B". ‘op’ will perform incremental concept.  
+2) Answer how many numbers between indices A and B are divisible by 3. This is represented by the command "A div B".
+
+
+Q.4 You have discovered a new way to add fractions.  Now, the result of adding fractions a/b and c/d is (a + c)/(b + d). Similarly the result of adding 3 fractions a/b, c/d, e/f is (a + c + e)/(b + d + f), and so on. You are given a list of N fractions a1/b1, a2/b2,...,aN/bN. You wonder what for each fraction i is the maximum fraction that you can obtain by adding together some continuous fractions in the list (possibly 1) starting at i ?
+For example, let N = 4 and the fractions be 1/1, 4/3, 10/1 and 5/4. The maximum fraction you can obtain by starting at index 1 is 3/1 (1/1 + 4/3 + 10/1). Similarly, the maximum fraction you can obtain by starting at index 2 is 7/2 (4/3 + 10/1). By starting at index 3, the maximum sum you can obtain is 10/1 itself, and by starting at index 4, you can obtain sum 5/4.
+
+
+Q.5. We have two classes named as integer and complex. Integer class only one variable type int that maintain the current value of object. Same is applied to complex class which have variable real and complex of integer type. At runtime all value of both class object demand from user.
+How conversion system can be applied:- 
+A) convert complex to integer(Both real and imaginary parts are added and create an integer variable).
+1)	What happen when conversion method can only be apply over integer class
+2)	Conversion method can apply over integer class.
+B) Apply some method such that we can add integer with changed complex no(i.e. Complex no. that now changes into integer).
+
+
+Q.6 Create a date class in c++ accept two valid dates of the form dd/mm/yyyy. Overload the unary operator ++ and --to get the next and previous dates of any given date.
+
+
+Q.7 Write a program that convert a number entered in roman numeral to decimal. Derive a class to overload the arithmetic operator +,-,*,/,++,-- 
+M-1000
+D-500
+C-100
+L-50
+X-10
+V-5
+I-1
+
+
+Q.8 You go for shopping in a mall. Mall has multiple shops for clothes, shoes, games and food stores. You have particular shopping list with you. How the whole procedure from entry up to the shopping have been carried out by you such that every item need to purchase properly.
+a) Every shop have some item-no, item code and also a tag of their cost attached with particular item.
+b) Before entering any shop, there is some instruction:- Do you want to enter this shop??
+c) After collecting particular item from shop. There exist billing scenario to pay for whole items you purchased from particular shop. 
+d) At the end, with completion of list (that is input by user at first screen) you exit from the mall.
+
+
+Q.9 Let we have 20 students in particular institute such that everyone can take/ at least 5 subject and maximum of 7 subjects. Every subject has particular subject-code associate with it. Student at his/her admission time will select their subject code/(choices of particular subject). Every student get assign with some unique roll-no after his/her 1st sem exam they get some marks in each subject, now create this program such that it provides searching scenario as:-
+A)	With an entry of particular roll no, it returns the total marks obtain by that particular student.
+B)	With entry of particular subject code it display all students who opt particular sun\bject with their roll-no and marks. 
+
+
+Q.10 Design a class named Employee. The class should contain following information in member variables:
+•	Employee name
+•	Social security number in the format xxx-xx-xxxx; where each x is a digit within the range 0-9
+•	Employee number in the format xxx-L, where each X is a digit within range 0-9, and the L is a letter within the range A-M
+•	Hire date
+Add a constructor, destructor, and other appropriate member function to the class. The constructor should dynamically allocate enough memory to hold the employee’s  name.
+Next, design a class named EmployeePay. This class should be derived from Employee class. It should keep the following information in member variables:
+•	Annual Pay
+•	Monthly Pay
+•	Dependents(The number of dependents the employee claims)
+Demonstrate the class in a program that asks the user to enter sample data, and then display it on the screen.
+
+
+Q.11 The class clockType was designed such that it has 3 member variables hr, min, and sec to store hour, minute and seconds. It has member function to
+•	Set the time
+•	Return the time
+•	Print the time
+•	Compare two times to see whether they are equal.
+Certain applications, in addition to hours, minutes, and seconds, might require you to store the time zone. Derive the class extClockType from the class clockType by adding a member variable to store the time zone. Add the necessary member function and constructor to make the class functional. Also write the definition of the member function and the constructors. Finally write a test program to test your class.
+
+
+Q.12  Create class IntegerSet for which each object can hold integers in the range 0 through 100.A set is represented internally as an array of ones and zeros. Array element a[i] is 1 if integer I is in the set. Array element a[j] is 0 if integer j is not in the set. The default constructor initializes a set to the so- called “empty set” i.e., a set whose array representation contains all zeros.
+  Provide member functions for the common set operations:
+I)	A unionOfSets- create a third set that is the set-theoretic  union of two existing sets.
+II)	intersectionOfSets- creates a third set which is the set- theoretic intersection of two existing sets.
+III)	insertElement- function that inserts a new integer k into a set
+IV)	printSet- function that prints a set as a list of numbers separated by spaces.print --- for an empty set
+V)	isEqualTo- function that determines whether two sets are equal.
+Provide an additional constructor that receives an array of integers and the size of that array to initialize a set object.
+Create several objects of this class & test the member functions.
+
+
+Q.13 A machine with 32-bit integers can represent integers in the range of approx 65535. What you need to do if addition takes place between 68888 and 70896. (as integer will never take such input ). Perform the following for the given input that is out of range from integer data type. (Note: never use any system defined data type).
+•	Overload the * multiplication operator
+•	Overload the /division operator
+•	Overload all the relational and equality operators

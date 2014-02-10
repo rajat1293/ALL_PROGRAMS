@@ -1,0 +1,123 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+positive_or_negative.exe_ -- emu8086 assembler version: 4.02  
+ 
+[ 5/9/2013  --  4:27:27 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       include emu8086.inc
+[   2]        :                                       .model small
+[   3]        :                                       .data
+[   4]    0000: 65 6E 74 65 72 20 6E 75 6D 62 65 72   a db "enter number$"
+                24                                  
+[   5]    000D: 70 6F 73 69 74 65 76 65 24            b db "positeve$"
+[   6]    0016: 6E 65 67 61 74 69 76 65 24            c db "negative$"
+[   7]        :                                       .code
+[   8]    0020:                                       start:
+[   9]    0020: B8 00 00                              mov ax,@data
+[  10]    0023: 8E D8                                 mov ds,ax
+[  11]    0025: BA 00 00                              mov dx,offset a
+[  12]    0028: B4 09                                 mov ah,09h
+[  13]    002A: CD 21                                 int 21h
+[  14]    002C: E8 52 00                              CALL scan_num
+[  15]    002F: B2 0A                                 mov dl,0ah
+[  16]    0031: B4 02                                 mov ah,02h
+[  17]    0033: CD 21                                 int 21h
+[  18]    0035: 8B C1                                 mov ax,cx
+[  19]    0037: D1 D0                                 rcl ax,01h
+[  20]    0039: 72 22                                 jc g
+[  21]    003B:                                       d:
+[  22]    003B: 50 56 EB 09 70 6F 73 69 74 69 76 65   PRINT 'positive'
+                00 BE 1F 00 2E 8A 04 3C 00 74 07 46 
+                B4 0E CD 10 EB F2 5E 58             
+[  23]    005B: EB 21                                 jmp t
+[  24]    005D:                                       g:
+[  25]    005D: 50 56 EB 09 6E 65 67 61 74 69 76 65   PRINT 'negative'
+                00 BE 41 00 2E 8A 04 3C 00 74 07 46 
+                B4 0E CD 10 EB F2 5E 58             
+[  26]    007D: C3                                    RET
+[  27]    007E:                                       t:
+[  28]    007E: E9 C3 00 52 50 56 B9 00 00 2E C6 06   DEFINE_SCAN_NUM
+                21 01 00 B4 00 CD 16 B4 0E CD 10 3C 
+                2D 74 69 3C 0D 75 03 E9 93 00 3C 08 
+                75 1E BA 00 00 8B C1 2E F7 36 22 01 
+                8B C8 50 B0 20 B4 0E CD 10 58 50 B0 
+                08 B4 0E CD 10 58 EB CB 3C 30 73 02 
+                EB 04 3C 39 76 1A 50 B0 08 B4 0E CD 
+                10 58 50 B0 20 B4 0E CD 10 58 50 B0 
+                08 B4 0E CD 10 58 EB A7 50 8B C1 2E 
+                F7 26 22 01 8B C8 58 83 FA 00 75 19 
+                2C 30 B4 00 8B D1 03 C8 72 0A EB 8B 
+                2E C6 06 21 01 01 EB 83 8B CA BA 00 
+                00 8B C1 2E F7 36 22 01 8B C8 50 B0 
+                08 B4 0E CD 10 58 50 B0 20 B4 0E CD 
+                10 58 50 B0 08 B4 0E CD 10 58 E9 5A 
+                FF 2E 80 3E 21 01 00 74 02 F7 D9 5E 
+                58 5A C3 00 0A 00                   
+[  29]    0144: EB 26 52 50 3D 00 00 75 0A 50 B0 30   DEFINE_PRINT_NUM
+                B4 0E CD 10 58 EB 12 3D 00 00 79 0A 
+                F7 D8 50 B0 2D B4 0E CD 10 58 E8 05 
+                00 58 5A C3                         
+[  30]    016C: EB 50 50 53 51 52 B9 01 00 BB 10 27   DEFINE_PRINT_NUM_UNS
+                3D 00 00 74 32 83 FB 00 74 35 83 F9 
+                00 74 04 3B C3 72 14 B9 00 00 BA 00 
+                00 F7 F3 04 30 50 8A C0 B4 0E CD 10 
+                58 8B C2 50 BA 00 00 8B C3 2E F7 36 
+                9C 01 8B D8 58 EB CE 50 B0 30 B4 0E 
+                CD 10 58 5A 59 5B 58 C3 0A 00       
+[  31]    01BE: EB 12 50 56 8A 04 3C 00 74 07 46 B4   DEFINE_PRINT_STRING
+                0E CD 10 EB F3 5E 58 C3             
+[  32]        :                                       
+[  33]        :                                       END
+[  34]        :                                       
+[  35]        :                                       
+[  36]        :                                       
+[  37]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: D2      -   bytes on last page (l.byte)
+0003: 01      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 36      -   check sum (l.byte)
+0013: 4B      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 02      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 01      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 02      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

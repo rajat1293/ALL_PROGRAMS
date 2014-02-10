@@ -1,0 +1,19 @@
+< THE SYMBOL TABLE >  searchpart.exe_  --  emu8086 assembler version: 4.02 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+DATA                     	00000     	-5        	SEGMENT   	(ITSELF)  
+A                        	00000     	1         	VAR       	data      
+B                        	00007     	1         	VAR       	data      
+C                        	0000B     	1         	VAR       	data      
+CODE                     	00001     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	code      
+S                        	0000D     	-1        	LABEL     	code      
+H                        	00013     	-1        	LABEL     	code      
+K                        	00017     	-1        	LABEL     	code      
+L                        	0002B     	-1        	LABEL     	code      
+M                        	00034     	-1        	LABEL     	code      
+===================================================================================================
+[ 2/21/2013  --  11:00:58 PM ] 
+< END >
+ 

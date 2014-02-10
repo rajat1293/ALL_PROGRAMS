@@ -1,0 +1,23 @@
+.model small
+.code
+start:
+mov cl,26
+mov bl,61h
+l:
+mov dl,bl
+mov ah,02h
+int 21h
+inc dl
+mov bl,dl
+mov dl,0Dh
+mov ah,02h
+int 21h
+mov dl,0Ah
+mov ah,02h
+int 21h
+loop l
+end start
+
+
+
+; [SOURCE]: D:\all XYZ programs\lab all prog_MP\date 4jan2013\a to z.asm
